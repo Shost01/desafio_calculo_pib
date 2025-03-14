@@ -1,91 +1,106 @@
-# Desafio Cálculo do PIB
+# 📊 Desafio Cálculo do PIB  
 
-![Badge de Licença](https://img.shields.io/badge/licença-MIT-blue.svg)
+![Badge de Licença](https://img.shields.io/badge/licença-MIT-blue.svg)  
 
-## Descrição
+## 📖 Descrição  
 
-Este projeto é uma aplicação React que consome dados da API do IBGE para exibir informações sobre o Produto Interno Bruto (PIB) e a população brasileira ao longo do tempo. Os usuários podem visualizar gráficos e tabelas que representam a evolução desses indicadores.
+Este projeto é uma aplicação React que consome dados da API do IBGE para exibir informações sobre o Produto Interno Bruto (PIB) e a população brasileira ao longo do tempo. Os usuários podem visualizar gráficos interativos e tabelas detalhadas que representam a evolução desses indicadores.  
 
-## Funcionalidades
+## 🚀 Funcionalidades  
 
-- 📊 Visualização de gráficos interativos do PIB e da população.
-- 📋 Exibição de tabelas detalhadas com os dados obtidos da API.
-- 🔄 Navegação intuitiva entre as diferentes visualizações.
+- 📊 Visualização de gráficos interativos do PIB e da população.  
+- 📋 Exibição de tabelas detalhadas com os dados obtidos da API.  
+- 🔄 Navegação intuitiva entre as diferentes visualizações.  
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas  
 
-- ⚛️ **React** - Biblioteca principal para construção da UI
-- 🚀 **Vite** - Ferramenta para desenvolvimento rápido
-- 🔀 **React Router** - Gerenciamento de rotas
-- 🌐 **Axios** - Requisições HTTP
-- 📈 **Chart.js** - Biblioteca para gráficos
+- ⚛️ **React** - Biblioteca principal para construção da UI  
+- ⚡ **Vite** - Ferramenta para desenvolvimento rápido  
+- 🔀 **React Router DOM** - Gerenciamento de rotas  
+- 🌐 **Axios** - Requisições HTTP  
+- 📈 **Chart.js** - Biblioteca para gráficos  
+- 🎨 **Tailwind CSS** - Estilização moderna e responsiva  
+- ✅ **Vitest** - Testes automatizados  
 
-## Instalação
+## 📦 Instalação  
 
-1. **Clone o repositório:**
+1. **Clone o repositório:**  
    ```bash
    git clone https://github.com/Shost01/desafio_calculo_pib.git
-Navegue até o diretório do projeto:
+   ```
+2. **Navegue até o diretório do projeto:**  
+   ```bash
+   cd desafio_calculo_pib
+   ```
+3. **Instale as dependências:**  
+   ```bash
+   yarn install
+   ```
+4. **Crie um arquivo `.env` e configure a variável de ambiente:**  
+   ```bash
+   VITE_API_URL=https://api.ibge.gov.br/
+   ```
+5. **Inicie o servidor de desenvolvimento:**  
+   ```bash
+   yarn dev
+   ```
+6. **Acesse a aplicação no navegador:**  
+   Normalmente, estará disponível em [`http://localhost:3000`](http://localhost:3000).  
 
-cd desafio_calculo_pib
+## 📂 Estrutura do Projeto  
 
-Instale as dependências:
-
-yarn install
-
-Inicie o servidor de desenvolvimento:
-
-
-yarn dev
-
-Acesse a aplicação no navegador: Geralmente, a aplicação estará disponível em http://localhost:3000.
-
-Estrutura do Projeto
-O projeto está organizado da seguinte forma:
-
+```
 desafio_calculo_pib/
 ├── public/
 ├── src/
-│   ├── components/
-│   │   ├── Menu.tsx
-│   │   ├── Graph.tsx
-│   │   └── Table.tsx
-│   ├── services/
-│   │   └── api.ts
-│   ├── App.tsx
-│   └── main.tsx
-├── .gitignore
-├── index.html
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
+│   ├── assets/                     # Arquivos estáticos  
+│   ├── components/                 # Componentes reutilizáveis  
+│   │   ├── navbar/                 # Navbar principal  
+│   │   ├── pibchart/               # Gráficos do PIB  
+│   │   ├── pibtable/               # Tabelas do PIB  
+│   ├── context/                    # Gerenciamento de estado global  
+│   ├── models/                     # Definição de tipos e interfaces  
+│   ├── pages/                      # Páginas principais  
+│   │   ├── home/                   # Página inicial  
+│   │   ├── pib/                    # Página de informações do PIB  
+│   ├── services/                   # Comunicação com APIs  
+│   ├── tests/                      # Testes automatizados  
+│   ├── App.tsx                     # Componente raiz  
+│   ├── main.tsx                    # Ponto de entrada da aplicação  
+│   ├── index.css                    # Estilos globais  
+├── .gitignore  
+├── index.html  
+├── package.json  
+├── tsconfig.json  
+└── vite.config.ts  
+```
 
+## 🤝 Contribuição  
 
-src/components/: Contém os componentes React, como Menu, Graph e Table.
-src/services/: Inclui serviços para comunicação com APIs, como o api.ts.
-src/App.tsx: Componente principal da aplicação.
-src/main.tsx: Ponto de entrada da aplicação.
-Contribuição
-Contribuições são bem-vindas! Para contribuir:
+Contribuições são bem-vindas! Para contribuir:  
 
-Faça um fork do repositório.
-Crie uma branch para sua feature ou correção:
-git checkout -b minha-feature
+1. Faça um **fork** do repositório.  
+2. Crie uma branch para sua feature ou correção:  
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas alterações:  
+   ```bash
+   git commit -m "Adiciona minha nova feature"
+   ```
+4. Faça o push para a branch:  
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um **Pull Request**.  
 
-Commit suas alterações:
+## 📜 Licença  
 
-git commit -m 'Minha nova feature'
+Este projeto está licenciado sob a **Licença MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.  
 
-Faça o push para a branch:
+## 🔗 Links Úteis  
 
-git push origin minha-feature
+- [Documentação do React](https://react.dev/)  
+- [Documentação do Vite](https://vitejs.dev/)  
+- [Documentação do Chart.js](https://www.chartjs.org/docs/latest/)  
 
-Abra um Pull Request.
-Licença
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-🔗 Links Úteis
-
-https://chatgpt.com/c/67d47cdd-8380-800b-add9-f4012106587d
-https://react.dev/
-https://chatgpt.com/c/67d47cdd-8380-800b-add9-f4012106587d#:~:text=Documenta%C3%A7%C3%A3o%20do%20Chart.js
