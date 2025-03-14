@@ -27,43 +27,22 @@ Este projeto é uma aplicação React que consome dados da API do IBGE para exib
    git clone https://github.com/Shost01/desafio_calculo_pib.git
 Navegue até o diretório do projeto:
 
-bash
-Copiar
-Editar
 cd desafio_calculo_pib
+
 Instale as dependências:
 
-bash
-Copiar
-Editar
 yarn install
-ou
 
-bash
-Copiar
-Editar
-npm install
-Uso
 Inicie o servidor de desenvolvimento:
 
-bash
-Copiar
-Editar
-yarn dev
-ou
 
-bash
-Copiar
-Editar
-npm run dev
+yarn dev
+
 Acesse a aplicação no navegador: Geralmente, a aplicação estará disponível em http://localhost:3000.
 
 Estrutura do Projeto
 O projeto está organizado da seguinte forma:
 
-pgsql
-Copiar
-Editar
 desafio_calculo_pib/
 ├── public/
 ├── src/
@@ -89,20 +68,16 @@ Contribuições são bem-vindas! Para contribuir:
 
 Faça um fork do repositório.
 Crie uma branch para sua feature ou correção:
-bash
-Copiar
-Editar
 git checkout -b minha-feature
+
 Commit suas alterações:
-bash
-Copiar
-Editar
+
 git commit -m 'Minha nova feature'
+
 Faça o push para a branch:
-bash
-Copiar
-Editar
+
 git push origin minha-feature
+
 Abra um Pull Request.
 Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
