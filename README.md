@@ -1,7 +1,5 @@
 # 📊 Desafio Cálculo do PIB  
 
-![Badge de Licença](https://img.shields.io/badge/licença-MIT-blue.svg)  
-
 ## 📖 Descrição  
 
 Este projeto é uma aplicação React que consome dados da API do IBGE para exibir informações sobre o Produto Interno Bruto (PIB) e a população brasileira ao longo do tempo. Os usuários podem visualizar gráficos interativos e tabelas detalhadas que representam a evolução desses indicadores.  
@@ -24,9 +22,7 @@ Este projeto é uma aplicação React que consome dados da API do IBGE para exib
 - 🎨 **Tailwind CSS** - Estilização moderna e responsiva  
 - ✅ **Vitest** - Testes automatizados  
 
-## 🎨 Decisões de Design e Tecnologias Utilizadas  
-
-Durante o desenvolvimento deste projeto, algumas decisões foram tomadas para garantir um código limpo, modular e eficiente:  
+## 🎨 Decisões de Design 
 
 ### 📌 **Design da Aplicação**  
 
@@ -35,15 +31,13 @@ Durante o desenvolvimento deste projeto, algumas decisões foram tomadas para ga
 - **Componentização:** O projeto foi estruturado com **componentes reutilizáveis**, como gráficos, tabelas e a barra de navegação, facilitando manutenção e escalabilidade.  
 - **Tema Simples e Leve:** A escolha de cores e espaçamentos foi baseada em uma abordagem minimalista, destacando as informações principais sem poluir a interface.  
 
-### ⚙️ **Escolha das Tecnologias**  
-
-- **React com Vite:** O Vite foi utilizado para melhorar a performance no desenvolvimento, proporcionando um ambiente rápido e eficiente.  
-- **React Router DOM:** Implementado para facilitar a navegação entre páginas sem recarregar a aplicação.  
-- **Chart.js:** Escolhido por ser uma biblioteca poderosa e fácil de integrar com React, possibilitando a exibição de gráficos interativos.  
-- **Axios:** Utilizado para fazer requisições HTTP de forma otimizada e com melhor controle sobre os dados retornados.  
-- **Vitest:** Adotado para a realização de testes unitários e garantir a estabilidade da aplicação.  
-
-Essas escolhas foram feitas para garantir um código modular, escalável e de fácil manutenção, além de proporcionar uma ótima experiência para os usuários.  
+## ⚙️ Escolha das Tecnologias
+React com Vite: O Vite foi utilizado para melhorar a performance no desenvolvimento, proporcionando um ambiente rápido e eficiente.
+React Router DOM: Implementado para facilitar a navegação entre páginas sem recarregar a aplicação.
+Chart.js: Escolhido por ser uma biblioteca poderosa e fácil de integrar com React, possibilitando a exibição de gráficos interativos.
+Axios: Utilizado para fazer requisições HTTP de forma otimizada e com melhor controle sobre os dados retornados.
+Vitest: Adotado para a realização de testes unitários e garantir a estabilidade da aplicação.
+Essas escolhas foram feitas com base nas tecnologias que possuo mais familiaridade, além de incluir algumas que busquei aprender durante o desenvolvimento, como o Chart.js, que utilizei pela primeira vez neste projeto. Além disso, considerei essas tecnologias as mais adequadas para o tipo de aplicação proposta.
 
 ## 📦 Instalação  
 
