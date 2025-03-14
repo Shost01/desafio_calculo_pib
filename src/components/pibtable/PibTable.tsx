@@ -30,7 +30,7 @@ const PibTable = () => {
 
     return (
         <div className="w-full p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="text-center text-2xl font-semibold mb-4">Tabela de PIB por Ano 1</h2>
+            <h2 className="text-center text-2xl font-semibold mb-4">Tabela de PIB por Ano </h2>
 
             <div className="overflow-auto">
                 <table className="min-w-full table-auto border-collapse">
