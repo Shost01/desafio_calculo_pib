@@ -59,6 +59,8 @@ desafio_calculo_pib/
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+
+
 src/components/: Contém os componentes React, como Menu, Graph e Table.
 src/services/: Inclui serviços para comunicação com APIs, como o api.ts.
 src/App.tsx: Componente principal da aplicação.
@@ -84,6 +86,6 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para ma
 
 🔗 Links Úteis
 
-API do IBGE
-Documentação do React
-Documentação do Chart.js
+https://chatgpt.com/c/67d47cdd-8380-800b-add9-f4012106587d
+https://react.dev/
+https://chatgpt.com/c/67d47cdd-8380-800b-add9-f4012106587d#:~:text=Documenta%C3%A7%C3%A3o%20do%20Chart.js
