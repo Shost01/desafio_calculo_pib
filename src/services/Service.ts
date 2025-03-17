@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Criando a instância do Axios com a base URL correta
 export const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL // Removido o ponto e vírgula
+    baseURL: import.meta.env.VITE_API_URL 
 });
 
 // Função para buscar dados do PIB

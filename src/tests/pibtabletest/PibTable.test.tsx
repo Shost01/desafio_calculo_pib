@@ -1,7 +1,8 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest"; // Importa matchers do Testing Library
-import PibTable from "../../components/pibtable/PibTable";
+import PibTable from "../../components/pibtable/PibTable"; // Importe o componente PibTable
+import { PibProvider } from "../../context/PibContext"; // Importe o PibProvider
 
 // Mock do ResizeObserver para evitar o erro
 global.ResizeObserver = class ResizeObserver {
@@ -28,7 +29,11 @@ vi.mock("../../components/pibdata/PibData", async () => {
 
 describe("PibTable", () => {
     it("deve renderizar o título corretamente", () => {
-        render(<PibTable />);
+        render(
+            <PibProvider> {/* Envolva o componente com o PibProvider */}
+                <PibTable />
+            </PibProvider>
+        );
 
         // Verifica se o título foi renderizado corretamente
         expect(screen.getByText("Tabela de PIB por Ano")).toBeInTheDocument();

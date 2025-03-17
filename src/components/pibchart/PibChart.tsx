@@ -34,13 +34,13 @@ const PibChart = () => {
     };
 
     const options: ChartOptions<"line"> = {
-        responsive: true,
-        maintainAspectRatio: false,
+        responsive: true, // Ajusta o grafico ao tamanho da tela (Contêiner)
+        maintainAspectRatio: false, // Faz o gráfico preenche o espaço disponivel
         plugins: {
             legend: {
                 position: "top",
                 labels: {
-                    usePointStyle: true,
+                    usePointStyle: true, // icone redondo
                     boxWidth: 12,
                     padding: 15,
                     font: { size: 14 },
@@ -54,16 +54,16 @@ const PibChart = () => {
             },
             y: {
                 title: { display: true, text: "PIB Total (US$)", font: { size: 14, weight: "bold" } },
-                type: "linear",
+                type: "linear", // define escala Linear
                 ticks: {
-                    stepSize: 1_000_000,
+                    stepSize: 1_000_000, // intervalo de valores no eixo Y
                     callback: function (value) {
-                        return Number(value).toLocaleString("pt-BR");
+                        return Number(value).toLocaleString("pt-BR"); // Formatação para Pt-Br
                     },
                     font: { size: 12 },
                 },
                 suggestedMin: 0,
-                suggestedMax: maxPib,
+                suggestedMax: maxPib, // Limites sugeridos do eixo Y
                 grid: { color: "rgba(0,0,0,0.1)" }
             },
             y1: {
